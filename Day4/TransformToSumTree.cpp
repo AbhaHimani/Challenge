@@ -124,8 +124,9 @@ public:
         }
         if (root->left == NULL and root->right == NULL)
         {
-            return root->data;
-            root->data = 0;
+             int temp= root->data;
+            root->data=0;
+            return temp;
         }
         int leftsum = sum(root->left);
         int rightsum = sum(root->right);
